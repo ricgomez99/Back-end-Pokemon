@@ -1,0 +1,32 @@
+@api =  http://localhost:3001
+
+
+GET {{api}}/pokemons
+
+###
+
+GET {{api}}/pokemons?name=pikachu
+
+###
+
+GET {{api}}/pokemons/6
+
+###
+
+GET {{api}}/types
+
+
+###
+POST {{api}}/pokemons
+Content-Type: application/json
+
+{
+    "name": "pirulete",
+    "life": 40,
+    "attack": 20,
+    "defense": 100,
+    "speed": 50,
+    "height": 5,
+    "weight": 100,
+    "types": ["normal", "fire"]
+}
